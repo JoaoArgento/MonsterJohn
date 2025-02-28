@@ -7,7 +7,7 @@ import Promocoes from "./Pages/Promocoes";
 
 export default function Rotas()
 {
-    return<BrowserRouter>
+    return<BrowserRouter basename="/MonsterJohn">
         <Routes>
             <Route index = "/" element = {<Vitrine/>}/>
             <Route path = "/produto/:codigo" element = {<Produto/>}/>
