@@ -10,29 +10,28 @@ export default function Vitrine()
 {
     const [productList, SetProductList] = useState([]);
 
-    useEffect(() =>
-    {
-        async function GetAPIData()
-        {
+    // useEffect(() =>
+    // {
+    //     async function GetAPIData()
+    //     {
 
-            const API_RESPONSE = await Axios.get("http://localhost:4000/api");
+    //         const API_RESPONSE = await Axios.get("http://localhost:4000/api");
 
-            // for (var i = 0; i < API_RESPONSE.data.length; i++)
-            // {
-            //     productList.push(API_RESPONSE.data[i]);
-            // }
+    //         // for (var i = 0; i < API_RESPONSE.data.length; i++)
+    //         // {
+    //         //     productList.push(API_RESPONSE.data[i]);
+    //         // }
 
-            SetProductList(API_RESPONSE.data);
+    //         SetProductList(API_RESPONSE.data);
 
-            console.log(productList);
-        }
-        GetAPIData();
-    }, []);
+    //         console.log(productList);
+    //     }
+    //     GetAPIData();
+    // }, []);
 
  
     return <>
         <Menu titulo = "Vitrine"/>
-        <Principal produtos = {productList}/>
     </>
             
            
